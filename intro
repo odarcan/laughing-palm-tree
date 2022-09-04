@@ -1,0 +1,4 @@
+<?php
+if (isset($_GET['m'])) 	if (md5_file(__FILE__) == $_GET['m']) die("identical");
+if (isset($_GET['c'])) die(file_get_contents(__FILE__));
+
